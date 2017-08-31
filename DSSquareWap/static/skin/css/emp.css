@@ -1,0 +1,300 @@
+.title-img {
+    width: 100%;
+}
+
+.title-img img {
+    width: 100%;
+    display: block;
+}
+
+.usertmp img {
+    width: 100%;
+    display: block;
+}
+
+.titleWrite {
+    position: absolute;
+    width: 9rem;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background: white;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.titleWrite i {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url('../img/返回-7.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    display: block;
+}
+
+.titleWrite span {
+    float: left;
+    line-height: 30px;
+    color: #343434;
+}
+
+.host-ser {
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+}
+
+.host-title img {
+    width: 100%;
+    display: block;
+}
+
+.hostList {
+    width: 100%;
+}
+
+.hostList img {
+    width: 100%;
+    display: block;
+}
+
+.serve-list {
+    width: 100%;
+    background: #fff;
+}
+
+.writeApp {
+    width: 4rem;
+    height: 20px;
+    background: #FBCD44;
+    position: absolute;
+    left: 3.8rem;
+    top: 0;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+}
+
+.low-1 {
+    background: url('../img/23_03.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.low-2 {
+    background: url('../img/23_05.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.low-3 {
+    background: url('../img/23_07.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.low-4 {
+    background: url('../img/23_12.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.low-5 {
+    background: url('../img/23_13.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.low-6 {
+    background: url('../img/23_14.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.serverList {
+    width: 100%;
+    border-top: 3px solid #f4f5f5;
+}
+
+.serverList img {
+    display: block;
+    width: 100%;
+}
+
+.listTop,
+.listBottom {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.top-left,
+.top-right {
+    width: 50%;
+    float: left;
+}
+
+.top-left {
+    border-right: 3px solid #f4f5f5;
+}
+
+.listTop {
+    border-bottom: 3px solid #f4f5f5;
+}
+
+.listLeft {
+    border-right: 3px solid #f4f5f5;
+}
+
+.left-top {
+    border-bottom: 3px solid #f4f5f5;
+}
+
+.right-top-1 {
+    border-bottom: 3px solid #f4f5f5;
+}
+
+.right-bottom-1 {
+    border-bottom: 3px solid #f4f5f5;
+}
+
+.partner {
+    width: 100%;
+    background: white;
+    margin-top: 15px;
+}
+
+.partner-list {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.partner-list {}
+
+.partner-list li img {
+    width: 100%;
+    display: block;
+}
+
+.partner-list li {
+    width: 32%;
+    float: left;
+}
+
+.partnerList-2,
+.partnerList-3,
+.partnerList-5,
+.partnerList-6,
+.partnerList-8,
+.partnerList-9 {
+    margin-left: 2%;
+}
+
+.partnerList-4,
+.partnerList-7,
+.partnerList-5,
+.partnerList-6,
+.partnerList-8,
+.partnerList-9 {
+    margin-top: 2%;
+}
+
+.clearOver {
+    width: 100%;
+    height: 3px;
+    background: #f4f5f5;
+    margin-top: 220px;
+}
+
+.partnerBt {
+    border-bottom: 25px solid #f4f5f5;
+}
+
+.footers {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.footers-low1 {
+    width: 100%;
+    height: 50px;
+}
+
+.low1-imgs {
+    width: 125px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.low1-tell {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url('../img/免费电话.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    display: block;
+}
+
+.low1-imgs span {
+    float: left;
+    line-height: 50px;
+    color: #343434;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.footers-low2 {
+    width: 100%;
+    background: white;
+}
+
+.footers-low2 ul {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.footers-low2 ul li {
+    width: 47%;
+    height: 40px;
+    float: left;
+    border: 2px solid #D9D9D9;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    line-height: 40px;
+    color: #ADADB5;
+}
+
+.low2-2,
+.low2-4 {
+    margin-left: 6%;
+}
+
+.footers-low3 {
+    width: 100%;
+    height: 120px;
+    background: #272731;
+    padding-top: 20px;
+}
+
+.footers-low3 p {
+    width: 100%;
+    height: 2rem;
+    color: #677274;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.low3-p {
+    margin-top: 20px;
+}

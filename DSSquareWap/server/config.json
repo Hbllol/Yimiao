@@ -1,0 +1,7 @@
+{
+  "script"          : "index.js",
+  "error_file"      : "./log/err.log",
+  "out_file"        : "./log/out.log",
+  "log_date_format" : "YYYY-MM-DD HH:mm Z"
+
+}

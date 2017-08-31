@@ -1,0 +1,397 @@
+.home-logo{
+  width:100%;
+  height: 7.5rem;
+  background-color: #ffffff;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 40%;
+}
+.swiperlist{
+  width: 100%;
+  /*height: 10rem;*/
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-wrapper {
+  /*position: relative;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*z-index: 1;*/
+  /*display: -webkit-box;*/
+  /*display: -ms-flexbox;*/
+  /*display: flex;*/
+  /*transition-property: transform;*/
+  /*box-sizing: content-box;*/
+}
+.banner{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  height: 10rem;
+  width: 100%;
+}
+.swiper-pagination-bullet{
+  margin: 0 .2rem;
+}
+.swiper-pagination{
+  padding: 0rem .7rem;
+  background: rgba(255,255,255,.6);
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 10px;
+  height: 14px;
+  line-height: 10px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+  margin: 0 .2rem;
+  margin-bottom: 0px;
+}
+.swiper-pagination .swiper-pagination-bullet{background: #000; opacity: 1;}
+.swiper-pagination .swiper-pagination-bullet-active{
+  background: #ffffff;
+  opacity: 1;
+}
+.mainmenu{
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  margin-bottom: 2.1rem;
+}
+.mainmenu li{
+  width: 33%;
+  float: left;
+  text-align: center;
+  height: 10rem;
+  line-height: 10rem;
+  border-bottom: 1px solid #f3f4f6;
+  border-left: 1px solid #f3f4f6;
+  position: relative;
+}
+.mainmenu li a{color: #343434;font-size: 1.5rem;display:block;width: 100%; height: 100%;overflow: hidden;}
+.mainmenu li a i {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+  width: 5rem;
+  height: 4rem;
+}
+.mainmenu li a span{
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  margin-top: .8rem;
+}
+.mainmenu li a .work-space{
+  background-image: url(../images/icon-1.png);
+}
+.mainmenu li a .service{
+  background-image: url(../images/icon-2.png);
+}
+.mainmenu li a .activity{
+  background-image: url(../images/icon-3.png);
+}
+.mainmenu li a .entrust{
+  background-image: url(../images/icon-4.png);
+}
+.mainmenu li a .entrust{
+  background-image: url(../images/icon-4.png);
+}
+.mainmenu li a .enterprise-room{
+  background-image: url(../images/icon-5.png);
+}
+.mainmenu li a .news{
+  background-image: url(../images/icon-6.png);
+}
+
+.dspower{
+  padding:3rem 0;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-bottom: 0;
+}
+.dspower .dshelp{
+  /*overflow: hidden;*/
+  border-bottom: 2px solid #f3f4f6;
+  height: 50px;
+  line-height: 40px;
+}
+.dspower .dshelp i {
+  padding: 5px 8px;
+  background-color: #05a2e7;
+  border-radius: 6px;
+  color: #ffffff;
+}
+.dspower .dshelp i:first-child{margin-left:5px;}
+.dspower .dshelp i:last-child{margin-right:5px;}
+.rollwrap{margin-bottom: 2.1rem;}
+.rollwrap ul li{
+  float: left;
+  border-left: 1px solid #f3f4f6;
+  padding:34px 0 27px;
+  color: #646464;
+  font-size: 16px;
+  text-align: center;
+  width: 28%;
+}
+.rollwrap ul li div:first-child {
+  margin-bottom: 15px;
+}
+.rollwrap ul li .t1{
+  font-size: 22px;
+  color: #646464;
+  /*text-shadow:5px 5px 10px rgba(0,0,0,.4);*/
+}
+.rollwrap ul li .t2{
+  font-size: 20px;
+  color: #646464;
+}
+.rollwrap ul li .gcolor{
+  color:#4cccb3;
+}
+
+.dschoice{
+  background-color: #ffffff;
+  margin-bottom: 2.1rem;
+}
+.dschoice .mint-tab-item-label{
+  font-size: 1.6rem;
+}
+.dschoice .mint-navbar .mint-tab-item.is-selected{
+  color: #000000;
+  font-weight: 600;
+  border-bottom: 0 none;
+}
+.dschoice .mint-navbar .mint-tab-item{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+.dschoice .mint-tab-container-item{
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+}
+.dschoice .swiper-slide{
+  height: 50%;
+  width: 24rem;
+}
+.dschoice .dschoiceList{
+  height: 100%;
+  width: 100%;
+}
+.dschoice .dschoiceList .room-img{
+  width: 100%;
+  height: 58%;
+  margin-bottom:1.0rem;
+  position: relative;
+}
+.dschoice .dschoiceList .room-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*transition: all .6s;*/
+}
+.dschoice .dschoiceList .room-pub {
+  width: 100%;
+  color: #3b3b3d;
+  padding: 1px 0;
+  text-align: left;
+}
+.dschoice .dschoiceList .room-title {
+  /*padding-left: .5rem;*/
+  /*padding-right: .5rem;*/
+  /*margin-top: 10px;*/
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+.dschoice .room-pub.room-cnt {
+  font-size: 1.2rem;
+}
+.room-cnt .bold {
+  font-size: 1.4rem;
+  font-weight: 600;
+  /*color: #0bafde;*/
+}
+
+.minMax {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.5rem;
+  margin-left: -4.5rem;
+  background-color: rgba(0,0,0,.6);
+  width: 9rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  font-size: 1.4rem;
+}
+.module-activity{
+  background-color: #ffffff;
+  padding:2.5rem 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.module-activity .title{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.module-activity .costar-txt{
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #969696;
+}
+
+.module-activity  .allActivity{
+  font-size: 1.4rem;
+  color: #05a2e7;
+  font-weight: 500;
+  float: right;
+}
+.module-activity h2{margin-bottom: 2.5rem;}
+.module-activity .activity-list{width: 100%;display: block;margin-bottom: 1.5rem;}
+.module-activity .activity-list:last-child{margin-bottom: 0;}
+.module-activity .activity-list img{display: block;width: 100%;height: auto;}
+
+.infotainment {
+  position: relative;
+}
+.infotainment li {
+  font-size: 14px;
+  line-height:4rem;
+  height: 4rem;
+  color: #505050;
+  border-bottom:1px solid #e5e5e5;
+}
+.infotainment li a {
+  color: #505050;
+}
+.infotainment .newsname.img27{
+  background-image: url(../images/img27.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+  position: relative;
+}
+.infotainment .newsname.img28{
+  padding-left: 25px;
+  position: relative;
+}
+.infotainment .newsname.img28 i{
+  position: absolute;
+  left: 3px;
+  top: 16px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #555555;
+}
+.infotainment .newsname{
+  float: left;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.infotainment .newstime{
+  float: right;
+}
+.subscribe{
+  padding:2rem 0;
+}
+
+.sub-phone{
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url(../images/icon-7.png);
+  background-size: 25%;
+  padding-left: 3rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  display: block;
+  margin: 0 auto;
+  width: 9rem;
+}
+.sub-phone2{
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.subscribe .major{margin-top: 2rem; overflow: hidden;width:28rem;margin:2rem auto 0;display: block;}
+.subscribe .major li{
+  width: 13.2rem;
+  height: 3rem;
+  line-height: 3rem;
+  float: left;
+  border: 1px solid #d0d0d0;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #737382;
+  font-size: 1.3rem;
+}
+.mr0{margin-right: 0 !important;}
+
+
+
+@media screen and (max-width: 780px) {
+  .dschoice .dschoiceList .room-img{height: 72%}
+}
+@media screen and (max-width: 380px) {
+  .dspower .dshelp{
+    font-size: 1.4rem;
+  }
+  .dschoice .dschoiceList{height: 100%;width: 100%;}
+  .dschoice .dschoiceList .room-img{height: 62%;}
+}
+@media screen and (max-width: 330px) {
+  .dspower .dshelp {
+    font-size: 1.2rem;
+  }
+  .subscribe .major li{width: 12.6rem;}
+}

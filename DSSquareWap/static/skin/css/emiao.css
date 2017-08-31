@@ -1,0 +1,349 @@
+.titleBack {
+    width: 100%;
+    height: 50px;
+    background: #2BA2E5;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.titleBack .back {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../img/图层 41.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    display: block;
+}
+
+.titleBanner img {
+    width: 100%;
+    display: block;
+}
+
+.titleBanner {
+    width: 100%;
+}
+
+.introduce {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    color: #646464;
+    letter-spacing: .2rem;
+    font-size:1.4rem;
+    
+}
+
+.usertmp {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    background: white;
+    padding-bottom: 50px;
+}
+
+.win,
+.lose {
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.win {
+    color: #FB8921;
+    font-size: 2.4rem;
+}
+
+.lose {
+    color: #BBBBB4;
+    font-size: 1.8rem;
+}
+
+.usertmp-cont {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.userContent {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    resize: none;
+    color: #979797;
+    font-size: 1.6rem;
+    padding: 10px;
+    letter-spacing: .2rem;
+}
+
+.usertmp-win {
+    margin-top: 20px;
+    letter-spacing: .1rem;
+    color: #979797;
+}
+
+.usertmp-win a {
+    color: #FB8921;
+    font-weight: bold;
+}
+
+.submitWin {
+    display: none;
+}
+
+.userTable {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.userTable p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    color: #3b3b3d;
+}
+
+.userTable input {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.6rem;
+    color: #C8C8C8;
+    letter-spacing: .2rem;
+    text-indent: 4rem;
+}
+
+.userTable-name,
+.userTable-mobile,
+.userTable-code,
+.userTable-comp {
+    position: relative;
+}
+
+.userTable-mobile i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('../img/电话-12.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: block;
+    bottom: 10px;
+}
+
+.userTable-name i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('../img/联系人.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: block;
+    bottom: 10px;
+}
+
+.userTable-code i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('../img/验证码-2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: block;
+    bottom: 10px;
+}
+
+.userTable-code span {
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    line-height: 50px;
+    color: #FB8921;
+}
+
+.userTable-comp i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('../img/公司名称.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    display: block;
+    bottom: 10px;
+}
+
+.usertmp-submit {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #FB8921;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    margin-top: 30px;
+}
+
+.salesman {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.salesman-write {
+    width: 100%;
+    height: 200px;
+    background: url('../img/图层 85.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    color: #fff;
+    letter-spacing: .2rem;
+    margin-bottom: 20px;
+}
+
+.salesman-write p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.salesman-write span {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+.salesman-low1 {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.low1Cover {
+    width: 100%;
+    height: auto;
+    background: white;
+    margin-top: 20px;
+}
+
+.salesman-low1-imgs {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: url('../img/27_03.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.salesman-low2-imgs {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: url('../img/27_06.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.salesman-low3-imgs {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: url('../img/27_08.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.salesman-low4-imgs {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: url('../img/27_10.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.salesman-low1 .salesman-title {
+    text-align: center;
+    color: #43BEC9;
+    font-size: 1.6rem;
+    margin-top: -15px;
+}
+
+.salesman-low1-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.salesman-low1-list li {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.salesman-low1-list li img {
+    width: 100%;
+    display: block;
+}
+
+.salesman-low1-list li p {
+    text-align: center;
+    font-size: 12px;
+    color: #3b3b3d;
+    line-height: 30px;
+}
+
+.salesman-low1-list li:nth-of-type(3) {
+    margin-left: 5%;
+}
+
+.salesman-low1-list li:nth-of-type(2) {
+    margin-left: 5%;
+}
+
+.salesman-low1-list li:nth-of-type(5) {
+    margin-left: 5%;
+}
+
+.salesman-low1-list li:nth-of-type(6) {
+    margin-left: 5%;
+}
+
+.lowFooter {
+    margin-bottom: 80px;
+}
+.writeUser{
+    width: 100px;
+    height: 100px;
+    background: url('../img/填写申请.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
