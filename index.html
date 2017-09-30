@@ -1,24 +1,80 @@
+<html>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+    <script>
+    var num = 0;
+    var api = {
+    	"jiekou1":"http://www.wmxz.wang/video.php?url=",
+    }
+
+    function Clo() {
+        document.getElementById("video_iframe").src = "http://ww3.sinaimg.cn/large/006Bo8Q9jw1fadd8rydyrj30m80dwgv9.jpg";
+    }
+
+    function Tip() {
+        alert("提交视频地址后，按All+数字1-6选择解析接口")
+    }
+
+    function Keytest(event) {
+        if (event.keyCode == 13) {
+            alert("提交视频地址后，按Alt+数字1-6选择解析接口")
+        };
+        if (event.keyCode == 18) {
+            num = 1
+        };
+        if (num == 1) {
+            if (event.keyCode == 49 | event.keyCode == 97) {
+                var link = document.getElementById('link').value;
+                document.getElementById("video_iframe").src = 'http://www.wmxz.wang/video.php?url=' + link;
+                num = 0;
+            }
+
+            if (event.keyCode == 50 | event.keyCode == 98) {
+                var link = document.getElementById('link').value;
+                document.getElementById("video_iframe").src = 'http://mt2t.com/yun?url=' + link;
+                num = 0;
+            }
+
+            if (event.keyCode == 51 | event.keyCode == 99) {
+                var link = document.getElementById('link').value;
+                document.getElementById("video_iframe").src = 'http://vip.sdyhy.cn/ckflv/?url=' + link;
+                num = 0;
+            }
+
+            if (event.keyCode == 52 | event.keyCode == 100) {
+                var link = document.getElementById('link').value;
+                document.getElementById("video_iframe").src = 'http://player.gakui.top/?url=' + link;
+                num = 0;
+            }
+
+            if (event.keyCode == 53 | event.keyCode == 101) {
+                var link = document.getElementById('link').value;
+                document.getElementById("video_iframe").src = 'http://www.vipjiexi.com/yun.php?url=' + link;
+                num = 0;
+            }
+
+            if (event.keyCode == 54 | event.keyCode == 102) {
+                var link = document.getElementById('link').value;
+                document.getElementById("video_iframe").src = 'http://www.xiguaso.com/api/index.php?url=' + link;
+                num = 0;
+            }
+        }
+
+    }
+    </script>
 </head>
-<body>
-    <a href="tel:18710966461">移动WEB页面JS一键拨打号码咨询功能</a>
-    <a href="mailto:webmaster@baidu.com">给我发邮件</a>
-      <div data-am-widget="map" class="am-map am-map-default"
-      data-name="云适配" data-address="北京市海淀区海淀大街27号亿景大厦3层西区" data-longitude="" data-latitude="" data-scaleControl="" data-zoomControl="true" data-setZoom="17" data-icon="http://amuituku.qiniudn.com/mapicon.png">
-    <div id="bd-map"></div>
-  </div>
+
+<body onkeydown="Keytest(event)" & onkeyup="keyup()">
+    <div style="overflow:hidden; margin: 0 auto; width:800px;padding:10px">
+        <input type="text" id="link" style="border:1px solid #00a0e9; width:600px; line-height:30px; padding:6px; display:block; float:left;" />
+        <input type="submit" style="width:100px; line-height:40px; background-color:#00a0e9; border:1px solid #FFF; display:block; float:right; color:#fff;" value="关闭视频" onclick="Clo()" />
+        <input type="submit" style="width:100px; line-height:40px; background-color:#00a0e9; border:1px solid #FFF; display:block; float:right; color:#fff;" value="提交视频地址" onclick="Tip()" />
+        <input style="width:800px; line-height:30px; background-color:#63b3ff; border:5px solid #FFF; display:block; float:right; color:#fff;" value="    在上方输入视频地址后按Alt+数字1-6选择解析接口后即可观看。    VIP视频支持爱奇艺，芒果TV，优酷，腾讯，乐视等" />
+    </div>
+    <div style="overflow:hidden; margin: 0 auto; width:800px;">
+        <iframe id="video_iframe" src="" style="height:500px;width:800px;frameborder:0;marginheight:0px;marginwidth:0px;background:#000000;border:2px solid #00a0e9">
+        </iframe>
+    </div>
 </body>
-   	<script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
-<script src='http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js'></script>
-<script>
-    
-</script>
+
 </html>
