@@ -1,60 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
-	<title>Document</title>
-	<style>
-		* {
-		    padding: 0;
-		    margin: 0;
-		}
-		.longWrap {
-		    width: 100%;
-		    height: 100%;
-		    position: absolute;
-		    left: 0;
-		    top: 0;
-		}
-		.longPic{
-			    width: 1878px;
-			    height: 1200px;
-			    position: absolute;
-			    left: 0;
-			    top: 0;
-		}
-		body,html{
-			overflow: hidden;
-			height: 100%;
-			width: 100%;
-		}
-		#wrapper {
-		    width: 640px;
-		    height: 100%;
-		    margin: 0 auto;
-		    position: relative;
-		}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-<div id="wrapper">
-	<div class="page">
-		<div class="longWrap">
-			<img src="http://test.go.163.com/auto/2017/1122/BEIJING-HYUNDAI/img/bb8.jpg" class="longPic">
-		</div>
-	</div>
-</div>
-	
-	<script src="http://go.163.com/2015/public/common/js/zepto.min.js"></script>
-	<script src="http://test.go.163.com/auto/2017/1122/BEIJING-HYUNDAI/js/orienter.min.js"></script>
-	<script src="http://test.go.163.com/auto/2017/1122/BEIJING-HYUNDAI/js/gravityScroll.js"></script>
-	<script>
-		$('.longWrap').pos({
-		    // 起始位置
-		    'lastPageX': -500,
-		    // 开启循环
-		    'loop': false
-		});
-	</script>
+    <button id="button">有人想加你为好友</button>
+<p id="text"></p>
 </body>
+<script>
+    if (window.Notification) {
+    var button = document.getElementById('button'), text = document.getElementById('text');
+    
+    var popNotice = function() {
+        if (Notification.permission == "granted") {
+            var notification = new Notification("Hi，帅哥：", {
+                body: '可以加你为好友吗？',
+                icon: 'http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg'
+            });
+            
+            notification.onclick = function() {
+                text.innerHTML = '张小姐已于' + new Date().toTimeString().split(' ')[0] + '加你为好友！';
+                notification.close();    
+            };
+        }    
+    };
+    
+    button.onclick = function() {
+        console.log(Notification.permission )
+        if (Notification.permission == "granted") {
+            
+            
+            popNotice();
+        } else if (Notification.permission != "denied") {
+            Notification.requestPermission(function (permission) {
+              popNotice();
+            });
+        }
+    };
+} else {
+    alert('浏览器不支持Notification');    
+}
+</script>
 </html>
