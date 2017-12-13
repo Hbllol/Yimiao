@@ -10,17 +10,7 @@
     
 </body>
 <script>
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    if(isAndroid){
-        function android(){
-            window.location.href = "weixin://"; /***打开app的协议，有安卓同事提供***/
-            window.setTimeout(function(){
-            window.location.href = "http://www.wjtr.com/download/index.html"; /***打开app的协议，有安卓同事提供***/
-            },2000);
-        }
-    }
-    if(isiOS){
+    
       function ios(){
         var ifr = document.createElement("iframe");
         ifr.src = "weixin://"; /***打开app的协议，有ios同事提供***/
@@ -31,6 +21,6 @@
            window.location.href = "http://www.wjtr.com/download/index.html"; /***下载app的地址***/
         },2000)
       };
-}
+      ios()
 </script>
 </html>
