@@ -7,20 +7,62 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="support"></div>
+    <div id="a"></div>
 </body>
 <script>
-    
-      function ios(){
-        var ifr = document.createElement("iframe");
-        ifr.src = "weixin://"; /***打开app的协议，有ios同事提供***/
-        ifr.style.display = "none"; 
-        document.body.appendChild(ifr);
-        window.setTimeout(function(){
-          document.body.removeChild(ifr);
-           window.location.href = "http://www.wjtr.com/download/index.html"; /***下载app的地址***/
-        },2000)
-      };
-      ios()
+function loadDemo() {  
+if(navigator.geolocation) {  
+document.getElementById("support").innerHTML = "HTML5 Geolocation supported.";  
+  navigator.geolocation.getCurrentPosition(successfulCallback); 
+
+  
+} else {  
+document.getElementById("support").innerHTML = "HTML5 Geolocation is not supported in  your browser.";  
+}  
+}  
+
+function successfulCallback(position){
+
+　　　var latitude = position.coords.latitude;
+
+　　　var longitude = position.coords.longitude;
+document.getElementById('a').innerHTML = latitude +'-------------'+longitude
+
+
+　　　　}
+
+function failCallback(error){
+　　　　　　var text ;
+
+　　　　　　switch(error.code){
+
+　　　　　　　　case error.PERMISSION_DENIED:
+
+      　　　　　　　　text ="用户拒绝对获取地理位置的请求。";
+
+     　　　　　　　　 break;
+   　　　　　　   case error.POSITION_UNAVAILABLE:
+
+    　　　　　　　　  text ="位置信息是不可用的。";
+
+      　　　　　　　　break;
+
+   　　　　　　  case error.TIMEOUT:
+
+     　　　　　　　　text ="请求用户地理位置超时。";
+
+     　　　　　　　　 break;
+
+   　　　　　　  case error.UNKNOWN_ERROR:
+
+     　　　　　　　　 text ="未知错误。";
+
+      　　　　　　　　break;
+   　　　　　　 }
+            document.getElementById('a').innerHTML = text
+
+　　　　　　}
+loadDemo()
 </script>
 </html>
