@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YuBz14LfCMRCdq9XR2eQidY0Ej9zpRBh"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 </head>
 <body>
     <div id="support"></div>
     <div id="a"></div>
+    <div id="b"></div>
 </body>
 <script>
 function loadDemo() {  
@@ -28,9 +31,7 @@ function successfulCallback(position){
 
 　　　var longitude = position.coords.longitude;
 document.getElementById('a').innerHTML = latitude +'-------------'+longitude
-
-
-　　　　}
+}
 
 function failCallback(error){
 　　　　　　var text ;
@@ -64,5 +65,33 @@ function failCallback(error){
 
 　　　　　　}
 loadDemo()
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 百度地图API功能
+
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+			map.panTo(r.point);
+			 document.getElementById('b').innerHTML= r.point.lng+'---------------------'+r.point.lat;
+		}
+		else {
+			alert('failed'+this.getStatus());
+		}        
+	},{enableHighAccuracy: true})
+	
 </script>
 </html>
